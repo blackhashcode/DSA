@@ -42,6 +42,14 @@ class Stack{
         return arr[top];
     }
     
+    int bottom(){
+        if(top == -1){
+            cout << "stack over flow \n";
+            return -1;
+        }
+        return arr[capacity - top - 1];
+    }
+    
     bool isEmpty(){
         return top == -1;
     }
